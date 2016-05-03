@@ -1,0 +1,17 @@
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
+export CUDA_HOME=/usr/local/cuda
+
+//to verify the environment variables
+printenv
+
+---Remove Cuda Completely for fresh installation on Ubuntu---
+sudo apt-get remove --purge cuda*
+
+
+Had to install cuda toolkit via this method...
+https://www.quantstart.com/articles/Installing-Nvidia-cuda-on-Ubuntu-14-04-for-Linux-GPU-Computing
+
+Don't worry about the compiler...
+Then i had to install v4 of the cudnn 
+
+And used the exports above at the top of this file.
